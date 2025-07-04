@@ -81,6 +81,27 @@ installation(){
 	exit 1
 }
 
+# -----------------------------#
+#  Banner Display             #
+# -----------------------------#
+display_banner() {
+    local cmagenta='\033[0;35m'
+    local creset='\033[0m'
+
+    printf "${cmagenta}"
+    cat << "EOF"
+
+██     ██  █████  ███    ██  ██      ██   ██  ███    ██
+██     ██ ██   ██ ████   ██  ██      ██   ██  ████   ██
+██     ██ ███████ ██ ██  ██  ██      ███████  ██ ██  ██
+ ██   ██  ██   ██ ██  ██ ██  ██      ██   ██  ██  ██ ██
+  █████   ██   ██ ██   ████  ███████ ██   ██  ██   ████                                                                  
+
+EOF
+    printf "${creset}"
+}
+
+
 clear
 pprint "Welcome to maythusharmusic Setup Installer\n\n"
 pprint "If you see any error during Installation Process, Please refer to these files for logs: "
@@ -94,7 +115,7 @@ update
 packages
 node
 installation
-pprint "\n\n\n\n\nWCGKING Installation Completed !" "cgreen"
+pprint "\n\n\n\n\nWANGLIN Installation Completed !" "cgreen"
 sleep 1
 clear
 
@@ -105,6 +126,7 @@ pprint "\nBOT TOKEN: "; color_reset; read bot_token
 pprint "\nOWNER ID:"; color_reset; read ownid
 pprint "\nMONGO DB URI: "; color_reset; read mongo_db
 pprint "\nLOG GROUP ID: "; color_reset; read logger
+pprint "\nLOG COOKIE URL: "; color_reset; read cookie_url
 pprint "\nSTRING SESSION: "; color_reset; read string_session
 
 pprint "\n\nProcessing your vars, wait a while !" "cgreen"
@@ -118,6 +140,7 @@ API_HASH = $api_hash
 BOT_TOKEN = $bot_token
 MONGO_DB_URI = $mongo_db
 LOGGER_ID = $logger
+COOKIE_URL= $cookie_url
 STRING_SESSION = $string_session
 OWNER_ID = $ownid""" > .env
 clear
