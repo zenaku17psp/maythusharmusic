@@ -3,7 +3,7 @@ from config import COOKIE_URL
 from maythusharmusic.utils.errors import capture_internal_err
 from maythusharmusic.logging import LOGGER
 
-COOKIE_PATH = "assets/cookies.txt"
+COOKIE_PATH = "cookies/cookies.txt"
 
 
 def resolve_raw_cookie_url(url: str) -> str:
