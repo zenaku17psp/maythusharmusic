@@ -22,4 +22,4 @@ services:
       - key: COOKIE_URL
         value: "https://batbin.me/minahassian"
       - key: STRING_SESSION
-        value: "BQFoDBEArtikhUPMxnqgDEOP66B4SNXFo9gZpd7SPOt_Gsa5tVwM0KnHhwe8AaFFzROhR6vD5htGc1y_8YpQil-FhPGY8IXXp0qEyP0CyyaX5PDm8fw54non08llLqroIAJ7zA9sW0sZ1yzapAN0jjyPvukn0sFHLt84YchAAaqIWumpVuHq1NbYGEXHiMu4TEe-gxpf-Y2sJkTlmKGeN37rMIGG1xrmq2NkwMtXsh90KBrJS6KccKmwKjRraiwLA0mJTe3qTzP23nqe7udGDn40LnbfLdrD9MhuLuU5aSpw63GKTDzfg8C689M4_5xpR1PuuaCKSnyyz9ORjWpCUEg8g6WmRAAAAAFQk4y9AA"
+        value: "BQFoDBEAYS9dupvNsr9g-NCgC9kWsP1Xso8-_VtKgLQ-tyn-sxhHp_qfcPbMEz_GP_JUHNPFN_yz3G8CCTIxW6nPBybJTcdFctoC9S9BS1lpOpYLYban_SqiazFOs-YwNNlk167fSb9FKJjHKgzhPbKyOeWr3fVHBRASNE0JPU6Q5c6GqdkP9xlWUmAi4tpoZ9BQ3-b-_iYxiRAKjEVB_VfDq-ZgqwsLdu_tUVSFYRxbiBq7xVVhhLl3GRxLtqovkBtpKvzGFyD7_IRiZJZB3iP1E3cJ2G1bbYCKHx7uNo1mQJV1dPZXMGIOONcwWHL_fIXLvD8VHHmGgeT1yoGtV1iRzWHVSwAAAAFQk4y9AA"
