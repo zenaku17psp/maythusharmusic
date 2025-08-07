@@ -12,7 +12,7 @@ services:
       - key: API_HASH
         value: "62c2019123d852fc8cc2092ca879f31c"
       - key: BOT_TOKEN
-        value: "7892011487:AAEgqHEy3x9TUgZ7i9LZaaz4vDO6v3Pv0EU"
+        value: "7892011487:AAFoX7bEAS3MBO6zzm5NjMyXPecNX2OCdHc"
       - key: MONGO_DB_URI
         value: "mongodb+srv://wanglin:wanglin@wanglin.ppt93bd.mongodb.net/?retryWrites=true&w=majority"
       - key: OWNER_ID
