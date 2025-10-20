@@ -1,13 +1,13 @@
-FROM python:3.11-slim
+FROM nikolaik/python-nodejs:python3.11-nodejs21
 
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ffmpeg aria2 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
+COPY . /app/
+WORKDIR /app/
+RUN python -m pip install --no-cache-dir --upgrade pip
+RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY . .
 CMD python3 -m maythusharmusic
