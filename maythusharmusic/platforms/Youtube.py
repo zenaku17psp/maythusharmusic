@@ -333,7 +333,7 @@ class YouTubeAPI:
         def video_dl():
             # Cookie + 720p Fix ကို ထည့်ပါ
             ydl_optssx = {
-                "format": "bestvideo[height<=?720]+bestaudio/best[height<=?720]", # 720p Fix
+                "format": "bestvideo[height<=?360]+bestaudio/best[height<=?360]", # 720p Fix
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
