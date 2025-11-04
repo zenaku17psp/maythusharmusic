@@ -399,7 +399,7 @@ class YouTubeAPI:
             fpath = f"downloads/{title}.mp3"
             return fpath
         elif video:
-            if await is_on_off(1):
+            if await is_on_off(0.1):
                 direct = True
                 downloaded_file = await loop.run_in_executor(None, video_dl)
             else:
@@ -434,7 +434,7 @@ class YouTubeAPI:
                     downloaded_file = await loop.run_in_executor(None, video_dl)
         else:
             # --- START: Audio Streaming (Fast Play) Logic ---
-            if await is_on_off(1):
+            if await is_on_off(0.1):
                 # Mode 1: Download (slow)
                 direct = True
                 downloaded_file = await loop.run_in_executor(None, audio_dl)
