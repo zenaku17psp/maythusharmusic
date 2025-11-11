@@ -18,9 +18,9 @@ STICKER_ID = "CAACAgUAAxkBAAEObxloHODEbJMRLG0DgnPYJ7bOUXc5QwACmRkAAg6V6FSBJlu8dU
 
 #COOKIE_URL = getenv("https://batbin.me/minahassian")
 
-API_URL = getenv("API_URL", "https://api.thequickearn.xyz")
-API_KEY = getenv("API_KEY", "30DxNexGenBotsfcfad8")
-VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
+API_URL = getenv("API_URL", "http://deadlinetech.site")
+API_KEY = getenv("API_KEY", "Rf1qda5gyCITj6VbrekzRxmR")
+
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
